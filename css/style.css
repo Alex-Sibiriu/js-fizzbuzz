@@ -1,9 +1,36 @@
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom right, rgb(151, 39, 39), rgb(247, 65, 65), rgb(151, 39, 39));
+}
+
 .box {
-  width: 70px;
-  aspect-ratio: 1;
-  border: 1px solid black;
+  width: calc(100% / 10 - 10px);
+  height: 50px;
+  margin: 5px;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.counter-number {
+  background: linear-gradient(to bottom right, purple, rgb(255, 1, 255), purple);
+  color: white;
+  border: 5px outset purple;
+}
+
+.fizz {
+  background: linear-gradient(to bottom right, green, rgb(0, 255, 0), green);
+  border: 5px outset green;
+}
+
+.buzz {
+  background: linear-gradient(to bottom right, rgb(195, 148, 29), rgb(249, 225, 88), rgb(195, 148, 29));
+  border: 5px outset goldenrod;
+}
+
+.fizzbuzz {
+  background: linear-gradient(to bottom right, darkblue, rgb(0, 0, 250), darkblue);
+  color: white;
+  border: 5px outset darkblue;
 }
