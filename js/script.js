@@ -1,5 +1,8 @@
+const container = document.getElementById('main-wrapper')
+
 for (i = 1; i <= 100; i++) {
   const element = document.createElement('div');
+  element.className = 'box';
 
   if (!(i % 3) && !(i % 5))  {
     element.innerHTML = 'fizzbuzz';
@@ -10,6 +13,8 @@ for (i = 1; i <= 100; i++) {
   } else {
     element.innerHTML = i; 
   }
+
+  container.append(element)
 
   console.log(element)
 }
